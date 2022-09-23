@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Formulario para freecodecamp</title>
+</head>
+<body>
+<div class="contenedor">
+    <header class="encabezado">
+      <h1 id="title">Formulario pokemón</h1>
+      <p id="description">veamos cuanto sabes de pokemón</p>
+    </header>
+  
+  <form id="survey-form">
+     <div class="cajitas">
+      <label id="name-label" for="name">Nombre</label> 
+      <input id="name" class="adentrocaja" type="text" name="name" placeholder="nombre completo" required="">
+     </div><br>
+     <div class="cajitas">
+      <label id="email-label" for="email">Correo</label> 
+      <input id="email" class="adentrocaja" type="email" name="email" placeholder="ej:pokemon@gmail.com" required="">
+     </div><br>
+     <div class="cajitas">
+      <label id="number-label" for="number">Edad</label> 
+      <input id="number" class="adentrocaja" type="number" name="age" min="8" max="99" placeholder="edad" required="">
+     </div>
+<br>
+    <div class="cajitas">
+     <p>Cual es tu tipo de pokemón que mas te gusta</p>
+      <select id="dropdown" class="cajasdeoption" name="tipos" required="">
+        <option disabled="" selected="" value="">seleciona tu mejor tipo</option>
+        <option value="acero">Acero</option>
+        <option value="agua">Agua</option>
+        <option value="bicho">Bicho</option>
+        <option value="dragon">Dragon</option>
+        <option value="electrico">Electrico</option>
+        <option value="fantasma">Fantasma</option>
+        <option value="fuego">Fuego</option>
+        <option value="hada">Hada</option>
+        <option value="hielo">Hielo</option>
+        <option value="lucha">Lucha</option>
+        <option value="normal">Normal</option>
+        <option value="planta">Planta</option>
+        <option value="psiquico">Psiquico</option>
+        <option value="roca">Roca</option>
+        <option value="siniestro">Siniestro</option>
+        <option value="veneno">Veneno</option>
+        <option value="volador">Volador</option>
+      </select>
+    </div>
+
+    <div class="cajitas">
+      <br>
+      <p>Que tipo de pokemón elijes al inicio de tu aventura </p>
+      <div class="areaRadio">
+        <input class="input-radio" name="provisorio" value="provisorio1" type="radio" checked="">Agua
+        <input class="input-radio" name="provisorio" value="provisorio2" type="radio" checked="">Planta
+        <input class="input-radio" name="provisorio" value="provisorio3" type="radio" checked="">Fuego
+      </div>
+    </div>
+    <br>
+
+    <div class="cajitas">
+      <p>¿En cuáles ligas has participado?</p>
+      <div class="areaCheckbox">
+        <label>
+          <input class="input-checkbox" name="elegirvarias" value="pensando1" type="checkbox">Liga Kanto
+        </label>
+        <label>
+          <input class="input-checkbox" name="elegirvarias" value="pensando2" type="checkbox">Liga Johto
+        </label>
+        <label>
+          <input class="input-checkbox" name="elegirvarias" value="pensando3" type="checkbox">Liga Sinnoh
+        </label>
+        <label>
+          <input class="input-checkbox" name="elegirvarias" value="pensando1" type="checkbox">Liga de Teselia
+        </label>
+        <label>
+          <input class="input-checkbox" name="elegirvarias" value="pensando2" type="checkbox">Liga Kalos
+        </label>
+        <label>
+          <input class="input-checkbox" name="elegirvarias" value="pensando3" type="checkbox">Liga Alola
+        </label>
+      </div>
+    </div><br>
+
+    <div class="cajitas">
+      <p>Comenta que es lo que más te gusta de la serie</p>
+      <textarea  class="input-textarea" name="comentario" id="comentario" placeholder="Escribe aqui tu comentario"></textarea>
+    </div>
+
+    <div class="cajitas">
+      <button id="submit" class="submit-button" type="submit">enviar formulario</button>
+      <input class="reset"  type="reset" value="resetear">
+    </div>
+
+  </form>
+</div>
+</body>
+</html>
